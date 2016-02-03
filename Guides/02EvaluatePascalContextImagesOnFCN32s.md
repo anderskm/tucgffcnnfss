@@ -15,36 +15,36 @@
    1. **Note:** The VOC2010 folder should contain 5 folders named “Annotations”, “ImageSets”, “JPEGImages”, “SegmentationClass” and “SegmentationObject”. However, in this guide we will only be using the JPEGImages folder.
 1. Download the class labels
   1. Download link: [http://www.cs.stanford.edu/~roozbeh/pascal-context/59_labels.txt](http://www.cs.stanford.edu/~roozbeh/pascal-context/59_labels.txt)
-  1. **Note: **These are only needed for your own reference.
+  1. **Note: ** These are only needed for your own reference.
 1. Modify eval.py to show the output from the network
   1. Open a Terminal window (Ctrl+alt+T)
-  1. Go to the folder with the FCN32 model:
-  ```
-  cd $CAFFE_ROOT/models/fcn_32_pascal_contex
-  ```
-  1. Open eval.py in gedit:
-  ```
-  gedit eval.py
-  ```
-  1. In the top of the document add:
-  ```python
-  from skimage import io
-  ```
-  1. In end of the document add:
-  ```python
-  io.imshow(out)
-  io.show()
-  ```
-  1. Save and close the document.
+  2. Go to the folder with the FCN32 model:
+    ```
+    cd $CAFFE_ROOT/models/fcn_32_pascal_contex
+    ```
+  3. Open eval.py in gedit:
+    ```
+    gedit eval.py
+    ```
+  4. In the top of the document add:
+    ```python
+    from skimage import io
+    ```
+  5. In end of the document add:
+    ```python
+    io.imshow(out)
+    io.show()
+    ```
+  6. Save and close the document.
 1. Run the test example
   1. Open a Terminal window (Ctrl+Alt+T)
-  1. Run evaluate the test image on the network:
-  ```
-  ipython eval.py
-  ```
-  1. When the image has been evaluated, the highest scoring class for each pixel will be displayed as an image.
-  1. Place the mouse over a pixel to read its label ID in the lower left corner, and use the class labels from step 4 to translate it into a class.
-  1. You should see something like right image below.
+  2. Run evaluate the test image on the network:
+    ```
+    ipython eval.py
+    ```
+  3. When the image has been evaluated, the highest scoring class for each pixel will be displayed as an image.
+  4. Place the mouse over a pixel to read its label ID in the lower left corner, and use the class labels from step 4 to translate it into a class.
+  5. You should see something like right image below.
 
 ![Cyclists on racing track](Figures/2007_000129.jpg "Cyclists on racing track.")
 ![Cyclists on racing track](Figures/2007_000129_evaluated.png "Cyclists on racing track evaluated.")
