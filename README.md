@@ -49,9 +49,9 @@ To evaluate and train fully convolutional networks for semantic segmentation, Ca
 1. Modify eval.py to show the output from the network
   1. Open a Terminal window (Ctrl+alt+T)
   1. Go to the folder with the FCN32 model:
-```
-cd $CAFFE_ROOT/models/fcn_32_pascal_contex
-```
+  ```
+  cd $CAFFE_ROOT/models/fcn_32_pascal_contex
+  ```
   1. Open eval.py in gedit:
 ```
 gedit eval.py
