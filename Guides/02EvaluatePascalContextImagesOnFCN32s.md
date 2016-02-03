@@ -19,29 +19,29 @@
 1. Modify eval.py to show the output from the network
   1. Open a Terminal window (Ctrl+alt+T)
   2. Go to the folder with the FCN32 model:
-    ```
-    cd $CAFFE_ROOT/models/fcn_32_pascal_contex
-    ```
+  ```
+  cd $CAFFE_ROOT/models/fcn_32_pascal_contex
+  ```
   3. Open eval.py in gedit:
-    ```
-    gedit eval.py
-    ```
+  ```
+  gedit eval.py
+  ```
   4. In the top of the document add:
-    ```python
-    from skimage import io
-    ```
+  ```python
+  from skimage import io
+  ```
   5. In end of the document add:
-    ```python
-    io.imshow(out)
-    io.show()
-    ```
+  ```python
+  io.imshow(out)
+  io.show()
+  ```
   6. Save and close the document.
 1. Run the test example
   1. Open a Terminal window (Ctrl+Alt+T)
   2. Run evaluate the test image on the network:
-    ```
-    ipython eval.py
-    ```
+  ```
+  ipython eval.py
+  ```
   3. When the image has been evaluated, the highest scoring class for each pixel will be displayed as an image.
   4. Place the mouse over a pixel to read its label ID in the lower left corner, and use the class labels from step 4 to translate it into a class.
   5. You should see something like right image below.
