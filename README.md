@@ -53,18 +53,18 @@ To evaluate and train fully convolutional networks for semantic segmentation, Ca
   cd $CAFFE_ROOT/models/fcn_32_pascal_contex
   ```
   1. Open eval.py in gedit:
-```
-gedit eval.py
-```
+  ```
+  gedit eval.py
+  ```
   1. In the top of the document add:
-```python
-from skimage import io
-```
+  ```python
+  from skimage import io
+  ```
   1. In end of the document add:
-```python
-io.imshow(out)
-io.show()
-```
+  ```python
+  io.imshow(out)
+  io.show()
+  ```
   1. Save and close the document.
 1. Run the test example
   1. Open a Terminal window (Ctrl+Alt+T)
