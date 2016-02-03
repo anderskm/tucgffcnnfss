@@ -15,6 +15,9 @@ The author of this guide share no connection to Caffe, PASCAL or the authors of 
 
 ----------
 
+# Guides:
+* [Installing Caffe future branch](Guides/InstallingCaffeFutureBranch.md)
+
 # Installing Caffe future branch
 To evaluate and train fully convolutional networks for semantic segmentation, Caffe Future branch must be installed rather than the main Caffe branch. This guide will explain how to install the Caffe future branch rather than the main branch. All of the steps during installation are the same with the exception of cloning git repository.
 
@@ -68,10 +71,14 @@ To evaluate and train fully convolutional networks for semantic segmentation, Ca
   1. Save and close the document.
 1. Run the test example
   1. Open a Terminal window (Ctrl+Alt+T)
-  1. Type ipython eval.py to run the test image through the network.
+  1. Run evaluate the test image on the network:
+  ```
+  ipython eval.py
+  ```
   1. When the image has been evaluated, the highest scoring class for each pixel will be displayed as an image.
-  1. Place the mouse over a pixel to read its label ID and use the class labels from step 4 to translate it into a class.
+  1. Place the mouse over a pixel to read its label ID in the lower left corner, and use the class labels from step 4 to translate it into a class.
   1. You should see something like left image below.
 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 ----------
