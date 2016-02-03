@@ -1,0 +1,460 @@
+ContextAllClasses,ClassName,nImages,AvgArea,TotalArea,Context33,Context59,ContextAgro1Name,ContextAgro1,ContextAgro2Name,ContextAgro2
+1,accordion,2,5.26%,0.1052,0,0,unknown,0,obstacle,5
+2,aeroplane,597,17.41%,103.9377,1,1,obstacle,5,obstacle,5
+3,air conditioner,5,2.68%,0.134,0,0,unknown,0,obstacle,5
+4,antenna,2,0.80%,0.016,0,0,unknown,0,obstacle,5
+5,artillery,1,3.36%,0.0336,0,0,unknown,0,obstacle,5
+6,ashtray,18,1.11%,0.1998,0,0,unknown,0,obstacle,5
+7,atrium,1,13.64%,0.1364,0,0,unknown,0,obstacle,5
+8,baby carriage,13,12.28%,1.5964,0,0,unknown,0,obstacle,5
+9,bag,319,3.18%,10.1442,0,21,obstacle,5,obstacle,5
+10,ball,25,2.12%,0.53,0,0,unknown,0,obstacle,5
+11,balloon,18,2.88%,0.5184,0,0,unknown,0,obstacle,5
+12,bamboo weaving,1,12.78%,0.1278,0,0,unknown,0,shelterbelt,7
+13,barrel,3,3.58%,0.1074,0,0,unknown,0,obstacle,5
+14,baseball bat,1,1.05%,0.0105,0,0,unknown,0,obstacle,5
+15,basket,89,5.70%,5.073,0,0,unknown,0,obstacle,5
+16,basketball backboard,6,5.37%,0.3222,0,0,unknown,0,obstacle,5
+17,bathtub,5,36.08%,1.804,0,0,unknown,0,obstacle,5
+18,bed,120,28.08%,33.696,0,22,obstacle,5,obstacle,5
+19,bedclothes,296,27.01%,79.9496,0,52,obstacle,5,obstacle,5
+20,beer,1,2.41%,0.0241,0,0,unknown,0,obstacle,5
+21,bell,2,1.24%,0.0248,0,0,unknown,0,obstacle,5
+22,bench,119,5.49%,6.5331,0,23,obstacle,5,obstacle,5
+23,bicycle,503,17.20%,86.516,2,2,vehicle,9,vehicle,9
+24,binoculars,0,0,0,0,0,unknown,0,obstacle,5
+25,bird,664,12.36%,82.0704,3,3,animal,1,animal,1
+26,bird cage,21,44.05%,9.2505,0,0,unknown,0,obstacle,5
+27,bird feeder,14,18.47%,2.5858,0,0,unknown,0,obstacle,5
+28,bird nest,6,21.69%,1.3014,0,0,unknown,0,animal,1
+29,blackboard,2,12.70%,0.254,0,0,unknown,0,obstacle,5
+30,board,137,9.67%,13.2479,0,0,unknown,0,obstacle,5
+31,boat,466,16.67%,77.6822,4,4,obstacle,5,obstacle,5
+32,bone,3,2.55%,0.0765,0,0,unknown,0,obstacle,5
+33,book,416,3.80%,15.808,0,24,obstacle,5,obstacle,5
+34,bottle,821,7.35%,60.3435,5,5,obstacle,5,obstacle,5
+35,bottle opener,1,0.61%,0.0061,0,0,unknown,0,obstacle,5
+36,bowl,137,2.57%,3.5209,0,0,unknown,0,obstacle,5
+37,box,434,5.16%,22.3944,0,0,unknown,0,obstacle,5
+38,bracelet,1,0.76%,0.0076,0,0,unknown,0,obstacle,5
+39,brick,9,4.38%,0.3942,0,0,unknown,0,building,2
+40,bridge,31,10.39%,3.2209,0,0,unknown,0,obstacle,5
+41,broom,5,6.75%,0.3375,0,0,unknown,0,obstacle,5
+42,brush,120,10.28%,12.336,0,0,unknown,0,obstacle,5
+43,bucket,175,2.73%,4.7775,0,0,unknown,0,obstacle,5
+44,building,3064,20.22%,619.5408,25,25,building,2,building,2
+45,bus,399,32.86%,131.1114,6,6,obstacle,5,obstacle,5
+46,cabinet,536,13.62%,73.0032,0,26,obstacle,5,obstacle,5
+47,cabinet door,1,5.84%,0.0584,0,0,unknown,0,obstacle,5
+48,cage,29,32.76%,9.5004,0,0,unknown,0,obstacle,5
+49,cake,2,8.76%,0.1752,0,0,unknown,0,obstacle,5
+50,calculator,1,1.30%,0.013,0,0,unknown,0,obstacle,5
+51,calendar,15,3.30%,0.495,0,0,unknown,0,obstacle,5
+52,camel,0,0,0,0,0,unknown,0,animal,1
+53,camera,52,1.80%,0.936,0,0,unknown,0,obstacle,5
+54,camera lens,0,0,0,0,0,unknown,0,obstacle,5
+55,can,78,2.24%,1.7472,0,0,unknown,0,obstacle,5
+56,candle,43,1.04%,0.4472,0,0,unknown,0,obstacle,5
+57,candle holder,29,0.93%,0.2697,0,0,unknown,0,obstacle,5
+58,cap,16,3.45%,0.552,0,0,unknown,0,obstacle,5
+59,car,1273,19.45%,247.5985,7,7,vehicle,9,vehicle,9
+60,card,11,3.41%,0.3751,0,0,unknown,0,obstacle,5
+61,cart,11,6.56%,0.7216,0,0,unknown,0,vehicle,9
+62,case,91,4.12%,3.7492,0,0,unknown,0,obstacle,5
+63,casette recorder,1,1.82%,0.0182,0,0,unknown,0,obstacle,5
+64,cash register,1,0.88%,0.0088,0,0,unknown,0,obstacle,5
+65,cat,1006,33.30%,334.998,8,8,animal,1,animal,1
+66,cd,45,3.33%,1.4985,0,0,unknown,0,obstacle,5
+67,cd player,1,1.35%,0.0135,0,0,unknown,0,obstacle,5
+68,ceiling,586,10.00%,58.6,33,27,building,2,building,2
+69,cell phone,43,0.49%,0.2107,0,0,unknown,0,obstacle,5
+70,cello,4,15.31%,0.6124,0,0,unknown,0,obstacle,5
+71,chain,10,1.52%,0.152,0,0,unknown,0,obstacle,5
+72,chair,1357,11.87%,161.0759,9,9,obstacle,5,obstacle,5
+73,chessboard,2,1.37%,0.0274,0,0,unknown,0,obstacle,5
+74,chicken,0,0,0,0,0,unknown,0,animal,1
+75,chopstick,8,1.12%,0.0896,0,0,unknown,0,obstacle,5
+76,clip,1,0.47%,0.0047,0,0,unknown,0,obstacle,5
+77,clippers,2,9.44%,0.1888,0,0,unknown,0,obstacle,5
+78,clock,61,0.99%,0.6039,0,0,unknown,0,obstacle,5
+79,closet,1,27.69%,0.2769,0,0,unknown,0,obstacle,5
+80,cloth,877,8.96%,78.5792,0,28,obstacle,5,obstacle,5
+81,clothes tree,0,0,0,0,0,unknown,0,obstacle,5
+82,coffee,4,0.59%,0.0236,0,0,unknown,0,obstacle,5
+83,coffee machine,2,1.41%,0.0282,0,0,unknown,0,obstacle,5
+84,comb,3,0.80%,0.024,0,0,unknown,0,obstacle,5
+85,computer,118,8.21%,9.6878,0,29,obstacle,5,obstacle,5
+86,concrete,9,6.79%,0.6111,0,0,unknown,0,building,2
+87,cone,30,1.32%,0.396,0,0,unknown,0,obstacle,5
+88,container,61,4.34%,2.6474,0,0,unknown,0,obstacle,5
+89,control booth,0,0,0,0,0,unknown,0,obstacle,5
+90,controller,3,4.67%,0.1401,0,0,unknown,0,obstacle,5
+91,cooker,0,0,0,0,0,unknown,0,obstacle,5
+92,copying machine,0,0,0,0,0,unknown,0,obstacle,5
+93,coral,0,0,0,0,0,unknown,0,obstacle,5
+94,cork,0,0,0,0,0,unknown,0,obstacle,5
+95,corkscrew,0,0,0,0,0,unknown,0,obstacle,5
+96,counter,31,11.19%,3.4689,0,0,unknown,0,obstacle,5
+97,court,2,14.94%,0.2988,0,0,unknown,0,obstacle,5
+98,cow,256,22.98%,58.8288,10,10,animal,1,animal,1
+99,crabstick,1,2.44%,0.0244,0,0,unknown,0,obstacle,5
+100,crane,12,0.56%,0.0672,0,0,unknown,0,obstacle,5
+101,crate,2,0.74%,0.0148,0,0,unknown,0,obstacle,5
+102,cross,3,0.23%,0.0069,0,0,unknown,0,obstacle,5
+103,crutch,2,0.52%,0.0104,0,0,unknown,0,obstacle,5
+104,cup,432,2.46%,10.6272,0,30,obstacle,5,obstacle,5
+105,curtain,381,11.51%,43.8531,0,42,obstacle,5,obstacle,5
+106,cushion,75,12.60%,9.45,0,0,unknown,0,obstacle,5
+107,cutting board,3,2.50%,0.075,0,0,unknown,0,obstacle,5
+108,dais,1,10.10%,0.101,0,0,unknown,0,obstacle,5
+109,disc,2,2.49%,0.0498,0,0,unknown,0,obstacle,5
+110,disc case,16,4.96%,0.7936,0,0,unknown,0,obstacle,5
+111,dishwasher,0,0,0,0,0,unknown,0,obstacle,5
+112,dock,3,10.26%,0.3078,0,0,unknown,0,obstacle,5
+113,dog,1204,25.23%,303.7692,12,12,animal,1,animal,1
+114,dolphin,0,0,0,0,0,unknown,0,animal,1
+115,door,455,10.01%,45.5455,0,31,obstacle,5,obstacle,5
+116,drainer,1,0.09%,0.0009,0,0,unknown,0,obstacle,5
+117,dray,1,10.38%,0.1038,0,0,unknown,0,vehicle,9
+118,drink dispenser,1,1.92%,0.0192,0,0,unknown,0,obstacle,5
+119,drinking machine,1,7.36%,0.0736,0,0,unknown,0,obstacle,5
+120,drop,0,0,0,0,0,unknown,0,obstacle,5
+121,drug,1,1.52%,0.0152,0,0,unknown,0,obstacle,5
+122,drum,9,8.77%,0.7893,0,0,unknown,0,obstacle,5
+123,drum kit,8,7.93%,0.6344,0,0,unknown,0,obstacle,5
+124,duck,15,8.21%,1.2315,0,0,unknown,0,animal,1
+125,dumbbell,0,0,0,0,0,unknown,0,obstacle,5
+126,earphone,8,1.21%,0.0968,0,0,unknown,0,obstacle,5
+127,earrings,1,1.07%,0.0107,0,0,unknown,0,obstacle,5
+128,egg,3,6.92%,0.2076,0,0,unknown,0,obstacle,5
+129,electric fan,11,2.57%,0.2827,0,0,unknown,0,obstacle,5
+130,electric iron,2,2.07%,0.0414,0,0,unknown,0,obstacle,5
+131,electric pot,1,2.02%,0.0202,0,0,unknown,0,obstacle,5
+132,electric saw,1,3.29%,0.0329,0,0,unknown,0,obstacle,5
+133,electronic keyboard,0,0,0,0,0,unknown,0,obstacle,5
+134,engine,2,3.94%,0.0788,0,0,unknown,0,obstacle,5
+135,envelope,0,0,0,0,0,unknown,0,obstacle,5
+136,equipment,27,7.52%,2.0304,0,0,unknown,0,obstacle,5
+137,escalator,0,0,0,0,0,unknown,0,obstacle,5
+138,exhibition booth,2,17.59%,0.3518,0,0,unknown,0,obstacle,5
+139,extinguisher,6,0.95%,0.057,0,0,unknown,0,obstacle,5
+140,eyeglass,15,2.72%,0.408,0,0,unknown,0,obstacle,5
+141,fan,40,2.05%,0.82,0,0,unknown,0,obstacle,5
+142,faucet,4,2.27%,0.0908,0,0,unknown,0,obstacle,5
+143,fax machine,1,2.58%,0.0258,0,0,unknown,0,obstacle,5
+144,fence,1021,10.79%,110.1659,0,32,obstacle,5,obstacle,5
+145,ferris wheel,1,10.09%,0.1009,0,0,unknown,0,obstacle,5
+146,fire extinguisher,2,0.75%,0.015,0,0,unknown,0,obstacle,5
+147,fire hydrant,2,4.74%,0.0948,0,0,unknown,0,obstacle,5
+148,fire place,41,9.53%,3.9073,0,0,unknown,0,obstacle,5
+149,fish,7,4.60%,0.322,0,0,unknown,0,animal,1
+150,fish tank,3,25.04%,0.7512,0,0,unknown,0,obstacle,5
+151,fishbowl,1,18.00%,0.18,0,0,unknown,0,obstacle,5
+152,fishing net,1,7.74%,0.0774,0,0,unknown,0,obstacle,5
+153,fishing pole,1,0.21%,0.0021,0,0,unknown,0,obstacle,5
+154,flag,100,2.05%,2.05,0,0,unknown,0,obstacle,5
+155,flagstaff,3,1.58%,0.0474,0,0,unknown,0,obstacle,5
+156,flame,0,0,0,0,0,unknown,0,obstacle,5
+157,flashlight,2,0.38%,0.0076,0,0,unknown,0,obstacle,5
+158,floor,1895,16.07%,304.5265,30,33,ground,4,ground,4
+159,flower,190,7.67%,14.573,0,34,field,3,field,3
+160,fly,1,0.43%,0.0043,0,0,unknown,0,obstacle,5
+161,foam,0,0,0,0,0,unknown,0,obstacle,5
+162,food,285,5.16%,14.706,0,35,obstacle,5,obstacle,5
+163,footbridge,1,10.82%,0.1082,0,0,unknown,0,obstacle,5
+164,forceps,0,0,0,0,0,unknown,0,obstacle,5
+165,fork,104,0.63%,0.6552,0,0,unknown,0,obstacle,5
+166,forklift,0,0,0,0,0,unknown,0,vehicle,9
+167,fountain,1,1.40%,0.014,0,0,unknown,0,obstacle,5
+168,fox,0,0,0,0,0,unknown,0,animal,1
+169,frame,17,5.86%,0.9962,0,0,unknown,0,obstacle,5
+170,fridge,69,10.07%,6.9483,0,0,unknown,0,obstacle,5
+171,frog,1,0.70%,0.007,0,0,unknown,0,animal,1
+172,fruit,2,0.77%,0.0154,0,0,unknown,0,obstacle,5
+173,funnel,1,0.37%,0.0037,0,0,unknown,0,obstacle,5
+174,furnace,2,31.60%,0.632,0,0,unknown,0,obstacle,5
+175,game controller,4,0.66%,0.0264,0,0,unknown,0,obstacle,5
+176,game machine,3,13.31%,0.3993,0,0,unknown,0,obstacle,5
+177,gas cylinder,0,0,0,0,0,unknown,0,obstacle,5
+178,gas hood,0,0,0,0,0,unknown,0,obstacle,5
+179,gas stove,0,0,0,0,0,unknown,0,obstacle,5
+180,gift box,2,10.96%,0.2192,0,0,unknown,0,obstacle,5
+181,glass,21,5.24%,1.1004,0,0,unknown,0,obstacle,5
+182,glass marble,1,8.14%,0.0814,0,0,unknown,0,obstacle,5
+183,globe,0,0,0,0,0,unknown,0,obstacle,5
+184,glove,6,4.34%,0.2604,0,0,unknown,0,obstacle,5
+185,goal,4,10.04%,0.4016,0,0,unknown,0,obstacle,5
+186,grandstand,30,18.55%,5.565,0,0,unknown,0,building,2
+187,grass,2742,23.28%,638.3376,22,36,field,3,field,3
+188,gravestone,0,0,0,0,0,unknown,0,obstacle,5
+189,ground,2987,20.98%,626.6726,23,37,ground,4,ground,4
+190,guardrail,35,6.09%,2.1315,0,0,unknown,0,obstacle,5
+191,guitar,53,4.83%,2.5599,0,0,unknown,0,obstacle,5
+192,gun,2,1.07%,0.0214,0,0,unknown,0,obstacle,5
+193,hammer,1,0.08%,0.0008,0,0,unknown,0,obstacle,5
+194,hand cart,11,4.87%,0.5357,0,0,unknown,0,obstacle,5
+195,handle,2,4.16%,0.0832,0,0,unknown,0,obstacle,5
+196,handrail,7,3.75%,0.2625,0,0,unknown,0,obstacle,5
+197,hanger,3,0.66%,0.0198,0,0,unknown,0,obstacle,5
+198,hard disk drive,0,0,0,0,0,unknown,0,obstacle,5
+199,hat,27,4.07%,1.0989,0,0,unknown,0,obstacle,5
+200,hay,3,21.08%,0.6324,0,0,unknown,0,field,3
+201,headphone,7,0.49%,0.0343,0,0,unknown,0,obstacle,5
+202,heater,4,8.10%,0.324,0,0,unknown,0,obstacle,5
+203,helicopter,3,12.77%,0.3831,0,0,unknown,0,obstacle,5
+204,helmet,62,2.32%,1.4384,0,0,unknown,0,obstacle,5
+205,holder,2,2.23%,0.0446,0,0,unknown,0,obstacle,5
+206,hook,2,0.61%,0.0122,0,0,unknown,0,obstacle,5
+207,horse,429,22.31%,95.7099,13,13,animal,1,animal,1
+208,horse-drawn carriage,25,12.70%,3.175,0,0,unknown,0,vehicle,9
+209,hot-air balloon,1,84.05%,0.8405,0,0,unknown,0,obstacle,5
+210,hydrovalve,0,0,0,0,0,unknown,0,obstacle,5
+211,ice,6,31.35%,1.881,0,0,unknown,0,obstacle,5
+212,inflator pump,0,0,0,0,0,unknown,0,obstacle,5
+213,ipod,15,0.75%,0.1125,0,0,unknown,0,obstacle,5
+214,iron,2,2.15%,0.043,0,0,unknown,0,obstacle,5
+215,ironing board,1,9.63%,0.0963,0,0,unknown,0,obstacle,5
+216,jar,18,2.80%,0.504,0,0,unknown,0,obstacle,5
+217,kart,1,16.90%,0.169,0,0,unknown,0,vehicle,9
+218,kettle,1,1.96%,0.0196,0,0,unknown,0,obstacle,5
+219,key,4,1.86%,0.0744,0,0,unknown,0,obstacle,5
+220,keyboard,140,4.69%,6.566,32,38,obstacle,5,obstacle,5
+221,kitchen range,12,7.54%,0.9048,0,0,unknown,0,obstacle,5
+222,kite,1,0.26%,0.0026,0,0,unknown,0,obstacle,5
+223,knife,92,0.61%,0.5612,0,0,unknown,0,obstacle,5
+224,knife block,2,0.30%,0.006,0,0,unknown,0,obstacle,5
+225,ladder,12,3.91%,0.4692,0,0,unknown,0,obstacle,5
+226,ladder truck,1,0.84%,0.0084,0,0,unknown,0,vehicle,9
+227,ladle,1,2.83%,0.0283,0,0,unknown,0,obstacle,5
+228,laptop,75,10.55%,7.9125,0,0,unknown,0,obstacle,5
+229,leaves,7,33.39%,2.3373,0,0,unknown,0,shelterbelt,7
+230,lid,1,1.37%,0.0137,0,0,unknown,0,obstacle,5
+231,life buoy,2,14.83%,0.2966,0,0,unknown,0,obstacle,5
+232,light,908,1.18%,10.7144,0,39,obstacle,5,obstacle,5
+233,light bulb,1,0.68%,0.0068,0,0,unknown,0,obstacle,5
+234,lighter,5,0.21%,0.0105,0,0,unknown,0,obstacle,5
+235,line,1,0.14%,0.0014,0,0,unknown,0,obstacle,5
+236,lion,0,0,0,0,0,unknown,0,animal,1
+237,lobster,0,0,0,0,0,unknown,0,animal,1
+238,lock,1,0.15%,0.0015,0,0,unknown,0,obstacle,5
+239,machine,0,0,0,0,0,unknown,0,obstacle,5
+240,mailbox,3,0.39%,0.0117,0,0,unknown,0,obstacle,5
+241,mannequin,1,11.90%,0.119,0,0,unknown,0,person,6
+242,map,3,32.42%,0.9726,0,0,unknown,0,obstacle,5
+243,mask,0,0,0,0,0,unknown,0,obstacle,5
+244,mat,35,11.11%,3.8885,0,0,unknown,0,obstacle,5
+245,match book,1,2.29%,0.0229,0,0,unknown,0,obstacle,5
+246,mattress,3,1.72%,0.0516,0,0,unknown,0,obstacle,5
+247,menu,24,4.34%,1.0416,0,0,unknown,0,obstacle,5
+248,metal,216,4.28%,9.2448,0,0,unknown,0,obstacle,5
+249,meter box,1,3.43%,0.0343,0,0,unknown,0,obstacle,5
+250,microphone,44,0.71%,0.3124,0,0,unknown,0,obstacle,5
+251,microwave,26,3.61%,0.9386,0,0,unknown,0,obstacle,5
+252,mirror,81,5.60%,4.536,0,0,unknown,0,obstacle,5
+253,missile,1,5.71%,0.0571,0,0,unknown,0,obstacle,5
+254,model,1,27.81%,0.2781,0,0,unknown,0,obstacle,5
+255,money,1,6.08%,0.0608,0,0,unknown,0,obstacle,5
+256,monkey,1,2.75%,0.0275,0,0,unknown,0,animal,1
+257,mop,3,0.66%,0.0198,0,0,unknown,0,obstacle,5
+258,motorbike,471,24.63%,116.0073,14,14,vehicle,9,vehicle,9
+259,mountain,728,10.75%,78.26,28,40,sky,8,sky,8
+260,mouse,122,0.43%,0.5246,0,41,animal,1,animal,1
+261,mouse pad,50,3.58%,1.79,0,0,unknown,0,obstacle,5
+262,musical instrument,7,11.16%,0.7812,0,0,unknown,0,obstacle,5
+263,napkin,120,2.60%,3.12,0,0,unknown,0,obstacle,5
+264,net,3,6.81%,0.2043,0,0,unknown,0,obstacle,5
+265,newspaper,30,3.99%,1.197,0,0,unknown,0,obstacle,5
+266,oar,10,5.48%,0.548,0,0,unknown,0,obstacle,5
+267,ornament,2,0.79%,0.0158,0,0,unknown,0,obstacle,5
+268,outlet,26,0.48%,0.1248,0,0,unknown,0,obstacle,5
+269,oven,8,10.24%,0.8192,0,0,unknown,0,obstacle,5
+270,oxygen bottle,1,4.21%,0.0421,0,0,unknown,0,obstacle,5
+271,pack,287,3.18%,9.1266,0,0,unknown,0,obstacle,5
+272,pan,10,3.51%,0.351,0,0,unknown,0,obstacle,5
+273,paper,298,4.02%,11.9796,0,0,unknown,0,obstacle,5
+274,paper box,4,0.99%,0.0396,0,0,unknown,0,obstacle,5
+275,paper cutter,6,6.75%,0.405,0,0,unknown,0,obstacle,5
+276,parachute,4,3.45%,0.138,0,0,unknown,0,obstacle,5
+277,parasol,17,4.14%,0.7038,0,0,unknown,0,obstacle,5
+278,parterre,1,14.77%,0.1477,0,0,unknown,0,obstacle,5
+279,patio,1,23.16%,0.2316,0,0,unknown,0,obstacle,5
+280,pelage,0,0,0,0,0,unknown,0,obstacle,5
+281,pen,44,0.33%,0.1452,0,0,unknown,0,obstacle,5
+282,pen container,8,1.14%,0.0912,0,0,unknown,0,obstacle,5
+283,pencil,2,0.65%,0.013,0,0,unknown,0,obstacle,5
+284,person,3919,20.64%,808.8816,15,15,person,6,person,6
+285,photo,3,2.69%,0.0807,0,0,unknown,0,obstacle,5
+286,piano,4,8.83%,0.3532,0,0,unknown,0,obstacle,5
+287,picture,674,5.70%,38.418,0,0,unknown,0,obstacle,5
+288,pig,1,1.41%,0.0141,0,0,unknown,0,animal,1
+289,pillar,8,3.16%,0.2528,0,0,unknown,0,building,2
+290,pillow,55,11.18%,6.149,0,0,unknown,0,obstacle,5
+291,pipe,16,2.01%,0.3216,0,0,unknown,0,obstacle,5
+292,pitcher,3,3.36%,0.1008,0,0,unknown,0,obstacle,5
+293,plant,106,14.52%,15.3912,0,0,unknown,0,shelterbelt,7
+294,plastic,11,6.37%,0.7007,0,0,unknown,0,obstacle,5
+295,plate,346,4.44%,15.3624,0,45,obstacle,5,obstacle,5
+296,platform,154,15.39%,23.7006,0,43,obstacle,5,obstacle,5
+297,player,24,2.37%,0.5688,0,0,unknown,0,obstacle,5
+298,playground,1,5.70%,0.057,0,0,unknown,0,obstacle,5
+299,pliers,1,0.39%,0.0039,0,0,unknown,0,obstacle,5
+300,plume,1,1.76%,0.0176,0,0,unknown,0,obstacle,5
+301,poker,1,0.73%,0.0073,0,0,unknown,0,obstacle,5
+302,poker chip,1,7.81%,0.0781,0,0,unknown,0,obstacle,5
+303,pole,1555,1.53%,23.7915,0,0,unknown,0,obstacle,5
+304,pool table,1,29.81%,0.2981,0,0,unknown,0,obstacle,5
+305,postcard,1,1.72%,0.0172,0,0,unknown,0,obstacle,5
+306,poster,185,6.82%,12.617,0,0,unknown,0,obstacle,5
+307,pot,310,3.08%,9.548,0,0,unknown,0,obstacle,5
+308,pottedplant,625,11.89%,74.3125,16,16,obstacle,5,obstacle,5
+309,printer,34,2.92%,0.9928,0,0,unknown,0,obstacle,5
+310,projector,2,0.52%,0.0104,0,0,unknown,0,obstacle,5
+311,pumpkin,2,7.72%,0.1544,0,0,unknown,0,obstacle,5
+312,rabbit,1,0.14%,0.0014,0,0,unknown,0,animal,1
+313,racket,1,4.75%,0.0475,0,0,unknown,0,obstacle,5
+314,radiator,27,3.93%,1.0611,0,0,unknown,0,obstacle,5
+315,radio,6,2.22%,0.1332,0,0,unknown,0,obstacle,5
+316,rail,31,6.12%,1.8972,0,0,unknown,0,obstacle,5
+317,rake,1,0.26%,0.0026,0,0,unknown,0,obstacle,5
+318,ramp,2,3.15%,0.063,0,0,unknown,0,obstacle,5
+319,range hood,8,3.98%,0.3184,0,0,unknown,0,obstacle,5
+320,receiver,13,1.12%,0.1456,0,0,unknown,0,obstacle,5
+321,recorder,2,23.21%,0.4642,0,0,unknown,0,obstacle,5
+322,recreational machines,1,61.90%,0.619,0,0,unknown,0,obstacle,5
+323,remote control,67,0.93%,0.6231,0,0,unknown,0,obstacle,5
+324,road,1102,21.97%,242.1094,24,46,ground,4,ground,4
+325,robot,0,0,0,0,0,unknown,0,obstacle,5
+326,rock,396,10.72%,42.4512,0,47,obstacle,5,obstacle,5
+327,rocket,0,0,0,0,0,unknown,0,obstacle,5
+328,rocking horse,1,0.74%,0.0074,0,0,unknown,0,obstacle,5
+329,rope,507,1.35%,6.8445,0,0,unknown,0,obstacle,5
+330,rug,181,20.69%,37.4489,0,0,unknown,0,obstacle,5
+331,ruler,1,1.61%,0.0161,0,0,unknown,0,obstacle,5
+332,runway,2,11.72%,0.2344,0,0,unknown,0,field,3
+333,saddle,85,1.95%,1.6575,0,0,unknown,0,obstacle,5
+334,sand,46,36.43%,16.7578,0,0,unknown,0,ground,4
+335,saw,1,1.53%,0.0153,0,0,unknown,0,obstacle,5
+336,scale,2,3.64%,0.0728,0,0,unknown,0,obstacle,5
+337,scanner,1,1.43%,0.0143,0,0,unknown,0,obstacle,5
+338,scissors,5,0.72%,0.036,0,0,unknown,0,obstacle,5
+339,scoop,1,0.04%,0.0004,0,0,unknown,0,obstacle,5
+340,screen,4,13.73%,0.5492,0,0,unknown,0,obstacle,5
+341,screwdriver,2,0.32%,0.0064,0,0,unknown,0,obstacle,5
+342,sculpture,73,7.67%,5.5991,0,0,unknown,0,obstacle,5
+343,scythe,0,0,0,0,0,unknown,0,obstacle,5
+344,sewer,2,26.70%,0.534,0,0,unknown,0,obstacle,5
+345,sewing machine,3,1.06%,0.0318,0,0,unknown,0,obstacle,5
+346,shed,2,2.25%,0.045,0,0,unknown,0,building,2
+347,sheep,297,21.95%,65.1915,17,17,animal,1,animal,1
+348,shell,3,2.43%,0.0729,0,0,unknown,0,obstacle,5
+349,shelves,448,7.64%,34.2272,0,48,obstacle,5,obstacle,5
+350,shoe,74,2.68%,1.9832,0,0,unknown,0,obstacle,5
+351,shopping cart,2,4.54%,0.0908,0,0,unknown,0,obstacle,5
+352,shovel,2,1.07%,0.0214,0,0,unknown,0,obstacle,5
+353,sidecar,2,15.60%,0.312,0,0,unknown,0,vehicle,9
+354,sidewalk,382,8.65%,33.043,0,49,ground,4,ground,4
+355,sign,592,2.32%,13.7344,0,44,obstacle,5,obstacle,5
+356,signal light,43,0.98%,0.4214,0,0,unknown,0,obstacle,5
+357,sink,24,15.51%,3.7224,0,0,unknown,0,obstacle,5
+358,skateboard,1,0.81%,0.0081,0,0,unknown,0,obstacle,5
+359,ski,3,5.71%,0.1713,0,0,unknown,0,obstacle,5
+360,sky,3231,26.77%,864.9387,21,50,sky,8,sky,8
+361,sled,2,4.28%,0.0856,0,0,unknown,0,vehicle,9
+362,slippers,1,4.63%,0.0463,0,0,unknown,0,obstacle,5
+363,smoke,56,10.42%,5.8352,0,0,unknown,0,obstacle,5
+364,snail,0,0,0,0,0,unknown,0,animal,1
+365,snake,3,15.25%,0.4575,0,0,unknown,0,animal,1
+366,snow,173,28.71%,49.6683,0,51,ground,4,ground,4
+367,snowmobiles,1,16.52%,0.1652,0,0,unknown,0,vehicle,9
+368,sofa,831,25.31%,210.3261,18,18,obstacle,5,obstacle,5
+369,spanner,0,0,0,0,0,unknown,0,obstacle,5
+370,spatula,1,1.36%,0.0136,0,0,unknown,0,obstacle,5
+371,speaker,118,3.48%,4.1064,0,0,unknown,0,obstacle,5
+372,speed bump,0,0,0,0,0,unknown,0,obstacle,5
+373,spice container,23,0.99%,0.2277,0,0,unknown,0,obstacle,5
+374,spoon,75,0.51%,0.3825,0,0,unknown,0,obstacle,5
+375,sprayer,0,0,0,0,0,unknown,0,obstacle,5
+376,squirrel,1,6.33%,0.0633,0,0,unknown,0,animal,1
+377,stage,16,49.30%,7.888,0,0,unknown,0,obstacle,5
+378,stair,36,21.55%,7.758,0,0,unknown,0,obstacle,5
+379,stapler,3,0.79%,0.0237,0,0,unknown,0,obstacle,5
+380,stick,4,0.28%,0.0112,0,0,unknown,0,shelterbelt,7
+381,sticky note,2,1.64%,0.0328,0,0,unknown,0,obstacle,5
+382,stone,0,0,0,0,0,unknown,0,obstacle,5
+383,stool,9,3.18%,0.2862,0,0,unknown,0,obstacle,5
+384,stove,10,2.22%,0.222,0,0,unknown,0,obstacle,5
+385,straw,6,0.47%,0.0282,0,0,unknown,0,obstacle,5
+386,stretcher,0,0,0,0,0,unknown,0,obstacle,5
+387,sun,1,3.99%,0.0399,0,0,unknown,0,sky,8
+388,sunglass,4,0.86%,0.0344,0,0,unknown,0,obstacle,5
+389,sunshade,3,5.83%,0.1749,0,0,unknown,0,obstacle,5
+390,surveillance camera,1,0.16%,0.0016,0,0,unknown,0,obstacle,5
+391,swan,1,0.22%,0.0022,0,0,unknown,0,animal,1
+392,sweeper,0,0,0,0,0,unknown,0,obstacle,5
+393,swim ring,2,9.90%,0.198,0,0,unknown,0,obstacle,5
+394,swimming pool,1,3.01%,0.0301,0,0,unknown,0,obstacle,5
+395,swing,1,2.09%,0.0209,0,0,unknown,0,obstacle,5
+396,switch,5,0.51%,0.0255,0,0,unknown,0,obstacle,5
+397,table,1566,9.76%,152.8416,11,11,obstacle,5,obstacle,5
+398,tableware,3,4.19%,0.1257,0,0,unknown,0,obstacle,5
+399,tank,2,2.63%,0.0526,0,0,unknown,0,obstacle,5
+400,tap,12,2.30%,0.276,0,0,unknown,0,obstacle,5
+401,tape,9,0.51%,0.0459,0,0,unknown,0,obstacle,5
+402,tarp,2,43.12%,0.8624,0,0,unknown,0,obstacle,5
+403,telephone,71,1.72%,1.2212,0,0,unknown,0,obstacle,5
+404,telephone booth,0,0,0,0,0,unknown,0,obstacle,5
+405,tent,36,12.26%,4.4136,0,0,unknown,0,obstacle,5
+406,tire,35,3.29%,1.1515,0,0,unknown,0,vehicle,9
+407,toaster,5,1.70%,0.085,0,0,unknown,0,obstacle,5
+408,toilet,2,12.68%,0.2536,0,0,unknown,0,obstacle,5
+409,tong,1,1.80%,0.018,0,0,unknown,0,obstacle,5
+410,tool,3,3.06%,0.0918,0,0,unknown,0,obstacle,5
+411,toothbrush,1,0.80%,0.008,0,0,unknown,0,obstacle,5
+412,towel,3,18.69%,0.5607,0,0,unknown,0,obstacle,5
+413,toy,356,5.21%,18.5476,0,0,unknown,0,obstacle,5
+414,toy car,2,30.91%,0.6182,0,0,unknown,0,vehicle,9
+415,track,356,9.15%,32.574,31,53,ground,4,ground,4
+416,train,465,28.46%,132.339,19,19,obstacle,5,obstacle,5
+417,trampoline,1,15.35%,0.1535,0,0,unknown,0,obstacle,5
+418,trash bin,91,3.03%,2.7573,0,0,unknown,0,obstacle,5
+419,tray,9,5.46%,0.4914,0,0,unknown,0,obstacle,5
+420,tree,3232,18.02%,582.4064,26,54,shelterbelt,7,shelterbelt,7
+421,tricycle,0,0,0,0,0,unknown,0,obstacle,5
+422,tripod,2,8.27%,0.1654,0,0,unknown,0,obstacle,5
+423,trophy,2,1.04%,0.0208,0,0,unknown,0,obstacle,5
+424,truck,126,6.39%,8.0514,0,55,vehicle,9,vehicle,9
+425,tube,3,3.82%,0.1146,0,0,unknown,0,obstacle,5
+426,turtle,1,0.98%,0.0098,0,0,unknown,0,animal,1
+427,tvmonitor,536,15.32%,82.1152,20,20,obstacle,5,obstacle,5
+428,tweezers,0,0,0,0,0,unknown,0,obstacle,5
+429,typewriter,1,3.40%,0.034,0,0,unknown,0,obstacle,5
+430,umbrella,13,4.32%,0.5616,0,0,unknown,0,obstacle,5
+431,unknown,3734,8.99%,335.6866,0,0,unknown,0,unknown,0
+432,vacuum cleaner,6,4.15%,0.249,0,0,unknown,0,obstacle,5
+433,vending machine,2,23.66%,0.4732,0,0,unknown,0,obstacle,5
+434,video camera,11,1.94%,0.2134,0,0,unknown,0,obstacle,5
+435,video game console,11,1.77%,0.1947,0,0,unknown,0,obstacle,5
+436,video player,37,2.97%,1.0989,0,0,unknown,0,obstacle,5
+437,video tape,3,4.09%,0.1227,0,0,unknown,0,obstacle,5
+438,violin,4,4.37%,0.1748,0,0,unknown,0,obstacle,5
+439,wakeboard,0,0,0,0,0,unknown,0,obstacle,5
+440,wall,2794,22.23%,621.1062,29,56,building,2,building,2
+441,wallet,7,1.26%,0.0882,0,0,unknown,0,obstacle,5
+442,wardrobe,2,18.93%,0.3786,0,0,unknown,0,obstacle,5
+443,washing machine,17,15.58%,2.6486,0,0,unknown,0,obstacle,5
+444,watch,6,0.81%,0.0486,0,0,unknown,0,obstacle,5
+445,water,899,32.68%,293.7932,27,57,water,10,water,10
+446,water dispenser,5,3.52%,0.176,0,0,unknown,0,obstacle,5
+447,water pipe,3,2.94%,0.0882,0,0,unknown,0,obstacle,5
+448,water skate board,1,0.60%,0.006,0,0,unknown,0,obstacle,5
+449,watermelon,2,7.00%,0.14,0,0,unknown,0,obstacle,5
+450,whale,0,0,0,0,0,unknown,0,animal,1
+451,wharf,0,0,0,0,0,unknown,0,ground,4
+452,wheel,8,17.21%,1.3768,0,0,unknown,0,vehicle,9
+453,wheelchair,5,3.78%,0.189,0,0,unknown,0,obstacle,5
+454,window,756,11.07%,83.6892,0,58,building,2,building,2
+455,window blinds,1,1.57%,0.0157,0,0,unknown,0,building,2
+456,wineglass,197,2.95%,5.8115,0,0,unknown,0,obstacle,5
+457,wire,113,1.17%,1.3221,0,0,unknown,0,obstacle,5
+458,wood,462,8.29%,38.2998,0,0,unknown,0,shelterbelt,7
+459,wool,2,4.78%,0.0956,0,59,animal,1,animal,1
