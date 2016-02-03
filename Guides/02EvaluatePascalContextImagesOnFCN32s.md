@@ -1,5 +1,5 @@
 # Evaluate PASCAL VOC 2010 images on FCN-32s
-This guides walks you through the steps required to evaluate PASCAL VOC 2010 images on the FCN-32s Fully Convolutional Network for Semantic Segmentation. The steps include downloading the model difinitions for FCN-32s, the pre-trained caffe-model and PASCAL VOC2010 dataset as well as some minor modification to the python script used for evaluating the network.
+This guide walks you through the steps required to evaluate PASCAL VOC 2010 images on the FCN-32s Fully Convolutional Network for Semantic Segmentation. The steps include downloading the model definitions for FCN-32s, the pre-trained caffe-model and PASCAL VOC2010 dataset as well as some minor modification to the python script used for evaluating the network.
 
 ## Guide
 1. Download the Caffe network definitions from github
