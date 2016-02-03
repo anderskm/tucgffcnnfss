@@ -44,7 +44,7 @@
   ```
   1. When the image has been evaluated, the highest scoring class for each pixel will be displayed as an image.
   1. Place the mouse over a pixel to read its label ID in the lower left corner, and use the class labels from step 4 to translate it into a class.
-  1. You should see something like left image below.
+  1. You should see something like right image below.
 
 ![Cyclists on racing track](Figures/2007_000129.jpg "Cyclists on racing track.")
 ![Cyclists on racing track](Figures/2007_000129_evaluated.png "Cyclists on racing track evaluated.")
