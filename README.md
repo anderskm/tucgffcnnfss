@@ -16,5 +16,11 @@ The author of this guide share no connection to Caffe, PASCAL or the authors of 
 ----------
 
 # Guides:
-1. [Installing Caffe future branch](Guides/InstallingCaffeFutureBranch.md)
-1. [Evaluate PASCAL-Context images on FCN-32s](Guides/EvaluatePASCAL-ContextImagesOnFCN-32s.md)
+The guides follows a sequential structure, where each guide assumes, that the previous guides have been completed.
+
+1. [Installing Caffe future branch](Guides/01InstallingCaffeFutureBranch.md)
+1. [Evaluate PASCAL-Context images on FCN-32s](Guides/02EvaluatePascalContextImagesOnFCN32s.md)
+1. [Fine-tuning on PASCAL-context dataset](Guides/03FineTuneOnPascalContextDataset.md)
+  * *Work in progress*
+1. [Fine-tuning FCN-32s on own dataset](Guides/04FineTuneOnOwnDataset.md)
+  * *Work in progress*
