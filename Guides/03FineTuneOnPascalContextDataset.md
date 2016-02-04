@@ -53,6 +53,9 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
         ```
 
         * The output should look something like this (only results for training set is shown):
+        
+            ![Summary of train LMDB](Figures/Summary_of_train_LMDB.png "Summary of train LMDB.")
+            ![Summary of test LMDB](Figures/Summary_of_test_LMDB.png "Summary of test LMDB.")
 
         * **Note:** The number of entries in each input data (color-lmdb) and labels (label-lmdb) should be the same. Verify that the number of channels in the input data and the labels are as expected. Same goes for their min and max height, width, label and data channel intensities (ch. 0 etc.). For semantic segmentation, the labels should all be 0.
         
