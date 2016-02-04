@@ -1,6 +1,7 @@
 # The unofficial Caffe guide for "Fully Convolutional Network for Semantic Segmentaiton"
 This git serves as a guide for installing and running [Fully Convolutional Networks for Semantic Segmentation](http://www.cs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf "Fully Convolutional Networks for Semantic Segmentation") in [Caffe](http://caffe.berkeleyvision.org/ "Caffe"). This git is NOT a repository for Caffe, Caffe models or datasets, however, links to official repositories and webpages will be provided where relevant.
 Scripts and code helpful to data conversion between MATLAB, images and Caffe are provided.
+The guides assumes access to both python and MATLAB.
 
 ----------
 
