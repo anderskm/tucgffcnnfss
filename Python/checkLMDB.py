@@ -1,3 +1,7 @@
+# Author: 	Anders Krogh Mortensen
+# Affilication: Dept. of Agroecology, Aarhus University
+# Date: 	4 Feb. 2016
+
 import caffe
 import lmdb
 import numpy as np
