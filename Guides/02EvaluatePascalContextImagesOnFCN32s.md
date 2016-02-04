@@ -35,10 +35,10 @@ This guide walks you through the steps required to evaluate PASCAL VOC 2010 imag
     ```
   
     5. In end of the document add:
-    ```python
-    io.imshow(out)
-    io.show()
-    ```
+        ```python
+        io.imshow(out)
+        io.show()
+        ```
   
     6. Save and close the document.
     
