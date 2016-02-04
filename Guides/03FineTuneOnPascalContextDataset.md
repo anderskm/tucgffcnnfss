@@ -15,17 +15,21 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
     1. Download createLMDB.py and checkLMDB.py and save them in $CAFFE_ROOT/models/fcn_32_pascal_contex/
     1. Open createLMDB.py and modify the variables “color_dir”, “label_dir” and “output_dir” to match your folder structure for your training set.
         * If you have followed the folder naming convention of this guide, the following variables should work for the train set:
+        
             ```
             color_dir = './pascal/VOC2010/JPEGImages'
             label_dir = './pascal/VOC2010/59_context_labels (train)'
             output_dir = './lmdb/train/'
             ```
+            
         * And for the test set:
+        
             ```
             color_dir = './pascal/VOC2010/JPEGImages'
             label_dir = './pascal/VOC2010/59_context_labels (test)'
             output_dir = './lmdb/test/'
             ```
+            
     1. Save and close createLMDB.py
     1. Open a terminal window (Ctrl+Alt+T) and type:
         ```
