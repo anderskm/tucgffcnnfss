@@ -1,9 +1,20 @@
+% This script loads all *.mat-files in a folder 
+%
+% Author:       Anders Krogh Mortensen
+% Affiliation:  Dept. of Agroecology, Aarhus University
+% Date:         4 Feb. 2016
+
 clear all;
 close all;
+
+%% Settings
 
 % Set directory and file paths
 matLabelsPath_input = '../Data/trainval/'; % Location of *.mat-files
 imageLabelsPath_output = '../Data/LabelImages/'; % Location of output images
+labelMappingPath = '../Data/PascalContextClasses.csv'; % Location of csv-file with mapping between old and new labels
+
+%% 
 
 % Look up all *.mat-files
 files = dir(fullfile(matLabelsPath_input,'*.mat'));
@@ -12,8 +23,9 @@ files = dir(fullfile(matLabelsPath_input,'*.mat'));
 mkdir(imageLabelsPath_output);
 
 % Load label look up table
-oldLabels = 1:459;
-newLabels = randi(59,1,459);
+[ labelMap ] = loadLabelMappingsFromCSVfile( labelMappingPath );
+oldLabels = labelMap(1).OldLabelIds;
+newLabels = labelMap(1).NewLabelIds;
 
 % Automtically set the required bit depth according to the maximum label
 % value.

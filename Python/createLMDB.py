@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+# Author: 	Anders Krogh Mortensen
+# Affilication: Dept. of Agroecology, Aarhus University
+# Date: 	4 Feb. 2016
+# 
+# Originally created by user mhsung at Github (see https://gist.github.com/shelhamer/80667189b218ad570e82#gistcomment-1672427). Modified by Anders.
+
 import caffe
 import glob
 import lmdb
@@ -7,9 +13,6 @@ import numpy as np
 from PIL import Image
 import os
 import sys
-
-# Created by mhsung (see https://gist.github.com/shelhamer/80667189b218ad570e82#gistcomment-1672427)
-# Modified by Anders Krogh Mortensen
 
 # Paths
 # Input images images
