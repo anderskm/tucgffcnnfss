@@ -66,12 +66,14 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
     1. Modify the “data”-layer during the TRAIN phase:
         1. Set the mean_values according to the values stored in $CAFFE_ROOT/models/fcn_32_pascal_contex/lmdb/train/color-mean.csv
         1. Set the source for the data_param:
+        
             ```
             source: "./lmdb/train/color-lmdb/"
             ```
             
     1. Modify the “label”-layer during the TRAIN phase:
-        1. Set the source for the data_param:        
+        1. Set the source for the data_param:
+        
             ```
             source: "./lmdb/train/label-lmdb/"
             ```
@@ -79,12 +81,14 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
     1. Modify the “data”-layer during the TEST phase:
         1. Set the mean_values according to the values stored in $CAFFE_ROOT/models/fcn_32_pascal_contex/lmdb/test/color-mean.csv
         1. Set the source for the data_param:
+        
             ```
             source: "./lmdb/test/color-lmdb/"
             ```
         
     1. Modify the “label”-layer during the TEST phase:
         1. Set the source for the data_param:
+        
             ```
             source: "./lmdb/test/label-lmdb/"
             ```
