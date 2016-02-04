@@ -1,8 +1,11 @@
 function [ map ] = loadLabelMappingsFromCSVfile( fileDir )
-
 % Made very specific for reading a csv-file with context-labels.
+%
+% Author:       Peter Christiansen
+% Affiliation:  Dept. of Engineering, Aarhus University
+% Date:         4 Feb. 2016
 
-table =readtable(fileDir);
+table = readtable(fileDir);
 
 % Specify mappings
 mappings(1).AllLabels = 'ContextAllClasses';
@@ -30,13 +33,13 @@ for iMap = 1:length(mappings)
     disp(['Reading mapping ' num2str(iMap) ':' strTmp])
     map(iMap).Type = strTmp;
     
-    map(iMap).AllLabels = table2array(table(:,{mappings(iMap).ReducedLabels}));
-    map(iMap).AllNames = table2cell(table(:,{[mappings(iMap).AllNames ]}));
-    map(iMap).ReducedLabels = table2array(table(:,{mappings(iMap).ReducedLabels}));
-    map(iMap).ReducedNames = table2cell(table(:,{mappings(iMap).ReducedNames}));
+    map(iMap).OldLabelIds = table2array(table(:,{mappings(iMap).AllLabels}));
+    map(iMap).OldLabelNames = table2cell(table(:,{[mappings(iMap).AllNames ]}));
+    map(iMap).NewLabelIds = table2array(table(:,{mappings(iMap).ReducedLabels}));
+    map(iMap).NewLabelNames = table2cell(table(:,{mappings(iMap).ReducedNames}));
     [labelsUnique, ia ] = unique(table2array(table(:,{mappings(iMap).ReducedLabels})));
-    map(iMap).ReducedLabelsUnique = labelsUnique;
-    map(iMap).ReducedNamesUnique = table2cell(table(ia,{mappings(iMap).ReducedNames}));
+    map(iMap).NewLabelIdsUnique = labelsUnique;
+    map(iMap).NewLabelNamesUnique = table2cell(table(ia,{mappings(iMap).ReducedNames}));
 end
 
 end
