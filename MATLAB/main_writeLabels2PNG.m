@@ -24,8 +24,9 @@ mkdir(imageLabelsPath_output);
 
 % Load label look up table
 [ labelMap ] = loadLabelMappingsFromCSVfile( labelMappingPath );
-oldLabels = labelMap(1).OldLabelIds;
-newLabels = labelMap(1).NewLabelIds;
+selectMapping = 2;
+oldLabels = labelMap(selectMapping).OldLabelIds;
+newLabels = labelMap(selectMapping).NewLabelIds;
 
 % Automtically set the required bit depth according to the maximum label
 % value.

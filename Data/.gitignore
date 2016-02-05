@@ -37,7 +37,7 @@
 ehthumbs.db
 Thumbs.db
 
+*.mat
+*.png
 
-#Data/trainval/
-#Data/LabelImages/
 
