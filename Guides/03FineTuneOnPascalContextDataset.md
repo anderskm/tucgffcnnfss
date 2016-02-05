@@ -103,7 +103,14 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
         ```
 
     1. Modify the “data”-layer during the TRAIN phase:
-        1. Set the mean_values according to the values stored in $CAFFE_ROOT/models/fcn_32_pascal_contex/lmdb/train/color-mean.csv
+        1. Set the mean_values according to the values stored in ./lmdb/train/color-mean.csv
+        
+            ```
+            mean_value: 103.0077
+            mean_value: 112.1925
+            mean_value: 117.3562
+            ```
+        
         1. Set the source for the data_param:
         
             ```
@@ -118,7 +125,16 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
             ```
             
     1. Modify the “data”-layer during the TEST phase:
-        1. Set the mean_values according to the values stored in $CAFFE_ROOT/models/fcn_32_pascal_contex/lmdb/test/color-mean.csv
+        1. Set the mean_values according to the values stored in ./lmdb/train/color-mean.csv . E.g.:
+        
+            ```
+            mean_value: 103.0077
+            mean_value: 112.1925
+            mean_value: 117.3562
+            ```
+        
+            * **Note:** These values should be the same as those set for the TRAIN phase.
+        
         1. Set the source for the data_param:
         
             ```
@@ -132,11 +148,13 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
             source: "./lmdb/test/label-lmdb/"
             ```
 
-1. Use caffemodel as a stating point
-    1. ** *Needs clarification* **
 1. Modify solver.prototxt
     1. Set display = 1
     1. Set test_iter equal to the number of images in your test set
+    
+1. Modify solve.py
+    1. Use caffemodel as a stating point
+    1. ** *Needs clarification* **
 1. Fine-tune the network
     1. In the terminal, write
     
