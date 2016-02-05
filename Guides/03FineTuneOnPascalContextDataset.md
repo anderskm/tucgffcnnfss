@@ -6,7 +6,7 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
     1. Go to: http://www.cs.stanford.edu/~roozbeh/pascal-context/#download
     1. Download “trainval.tar.gz”
     1. Untar the container into: $CAFFE_ROOT/models/fcn_32_pascal_contex/pascal/VOC2010/
-        * ** Note: ** This should add a folder called "trainval" and a file called "labels.txt" to this directory.
+        * **Note:** This should add a folder called "trainval" and a file called "labels.txt" to this directory.
     1. The folder "trainval" contains mat-files with the annotations. These annotations needs to be converted into png-images, before they can be fed into the network.
         1. Open the Matlab script "main_writeLabels2PNG.m" in Matlab
         2. Edit the directory and file paths, to suit your setup. E.g.:
@@ -23,7 +23,7 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
     1. Open the Matlab script "main_splitDataset.m" in Matlab.
     2. Edit the directory paths to suit your setup. E.g.:
     
-        ```
+        ```matlab
         fullDatasetPath = '../pascal/VOC2010/pascal-context-59';
         trainDatasetPath_out = '../pascal/VOC2010/pascal-context-59 (train)';
         testDatasetPath_out = '../pascal/VOC2010/pascal-context-59 (test)';
@@ -32,19 +32,20 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
         
     3. Set the fraction of the dataset, which should be used for training. The rest is implicitly used for test.
     
-        ```
+        ```matlab
         trainFraction = 0.7;
         ```
         
-        * ** Note:** Fraction of dataset used for training. Rest is used for test. E.g. 0.7 results in 70% of the dataset for training and 30% for test set
+        * **Note:** Fraction of dataset used for training. Rest is used for test. E.g. 0.7 results in 70% of the dataset for training and 30% for test set
         
     4. (Optional) Set the random seed. This variable is used as seed for the random number generator, which is used to randomly split the dataset into train and test set. If set, the specified number will be used as seed. If left empty (by setting it to []), it will use continue where it left off.
 
-        ```
+        ```matlab
         randomSeed = 1234;
         ```
         
     5. Press F5 to run the Matlab script to split copy the images into two folders containing the training set and the test set, respectively.
+        * **Note:** The way the dataset is split is rather naïve. It does not guarentee, that all classes are represented evenly in both the training and test set. Hence, using this script, one might split the dataset such that a class is only present in either the training or test set.
 
 1. Create LMDB databases for input data and labels for both training and test set
     1. Download createLMDB.py and checkLMDB.py and save them in $CAFFE_ROOT/models/fcn_32_pascal_contex/
