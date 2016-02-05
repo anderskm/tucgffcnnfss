@@ -24,7 +24,7 @@ mkdir(imageLabelsPath_output);
 
 % Load label look up table
 [ labelMap ] = loadLabelMappingsFromCSVfile( labelMappingPath );
-selectMapping = 2;
+selectMapping = 4;
 oldLabels = labelMap(selectMapping).OldLabelIds;
 newLabels = labelMap(selectMapping).NewLabelIds;
 

@@ -40,6 +40,10 @@ for iMap = 1:length(mappings)
     [labelsUnique, ia ] = unique(table2array(table(:,{mappings(iMap).ReducedLabels})));
     map(iMap).NewLabelIdsUnique = labelsUnique;
     map(iMap).NewLabelNamesUnique = table2cell(table(ia,{mappings(iMap).ReducedNames}));
+    
+    % Class 0 should always be called unknown/background.
+    map(iMap).NewLabelNamesUnique{1} = 'unknown';
+    
 end
 
 end
