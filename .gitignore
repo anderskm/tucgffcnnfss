@@ -38,6 +38,6 @@ ehthumbs.db
 Thumbs.db
 
 
-Data/trainval
-Data/LabelImages
+Data/trainval/*.mat
+Data/LabelImages/*.png
 
