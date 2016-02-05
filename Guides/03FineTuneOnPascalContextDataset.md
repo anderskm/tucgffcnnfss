@@ -2,15 +2,51 @@
 This guide provides step-by-step instructions for fine-tuning the Caffe model provided by Jonathan Long et al. using the PASCAL-Contex dataset.
 
 ## Guide
-1. Download the Pascal-context annotations ***(incorrect information. Needs to be updated!)***
+1. Download the Pascal-context annotations and convert them to png-images
     1. Go to: http://www.cs.stanford.edu/~roozbeh/pascal-context/#download
-    1. Download “59_context_labels.tar.gz”
-        1. This should contain the labels for the  Pascal-Context training set. These are stored as *.png-files where the intensity corresponds to the class.
-    1. Untar the container into: $CAFFE_ROOT/models/fcn_32_pascal_contex/pascal/VOC2010/59_context_labels/
-    1. Create two new folders called 59_context_labels (test) and 59_context_labels (train) in the pascal VOC2010 folder; $CAFFE_ROOT/models/fcn_32_pascal_contex/pascal/VOC2010/
-    1. Copy half the images from 59_context_labels into 59_context_labels (train) and the other half into 59_context_labels (test)
-        * **Note:** The content of these two folders will determine your training and test set.
-        * **Note:** A separate test set is available here, but it requires you to setup an account (However, it can be done fairly quickly, if you are interested).
+    1. Download “trainval.tar.gz”
+    1. Untar the container into: $CAFFE_ROOT/models/fcn_32_pascal_contex/pascal/VOC2010/
+        * **Note:** This should add a folder called "trainval" and a file called "labels.txt" to this directory.
+    1. The folder "trainval" contains mat-files with the annotations. These annotations needs to be converted into png-images, before they can be fed into the network.
+        1. Open the Matlab script "main_writeLabels2PNG.m" in Matlab
+        2. Edit the directory and file paths, to suit your setup. E.g.:
+        
+            ```matlab
+            matLabelsPath_input = '../Data/trainval/'; % Location of *.mat-files
+            imageLabelsPath_output = '../Data/LabelImages/'; % Location of output images
+            labelMappingPath = '../Data/PascalContextClasses.csv'; % Location of csv-file with mapping between old and new labels
+            ```
+
+        3. Press F5 to run the Matlab script and convert the images.
+        
+1. Split dataset into two folders containing the training set and the test set, respectively.
+    1. Open the Matlab script "main_splitDataset.m" in Matlab.
+    2. Edit the directory paths to suit your setup. E.g.:
+    
+        ```matlab
+        fullDatasetPath = '../pascal/VOC2010/pascal-context-59';
+        trainDatasetPath_out = '../pascal/VOC2010/pascal-context-59 (train)';
+        testDatasetPath_out = '../pascal/VOC2010/pascal-context-59 (test)';
+        fileExtention = 'png';
+        ```
+        
+    3. Set the fraction of the dataset, which should be used for training. The rest is implicitly used for test.
+    
+        ```matlab
+        trainFraction = 0.7;
+        ```
+        
+        * **Note:** Fraction of dataset used for training. Rest is used for test. E.g. 0.7 results in 70% of the dataset for training and 30% for test set
+        
+    4. (Optional) Set the random seed. This variable is used as seed for the random number generator, which is used to randomly split the dataset into train and test set. If set, the specified number will be used as seed. If left empty (by setting it to []), it will use continue where it left off.
+
+        ```matlab
+        randomSeed = 1234;
+        ```
+        
+    5. Press F5 to run the Matlab script to split copy the images into two folders containing the training set and the test set, respectively.
+        * **Note:** The way the dataset is split is rather naïve. It does not guarentee, that all classes are represented evenly in both the training and test set. Hence, using this script, one might split the dataset such that a class is only present in either the training or test set.
+
 1. Create LMDB databases for input data and labels for both training and test set
     1. Download createLMDB.py and checkLMDB.py and save them in $CAFFE_ROOT/models/fcn_32_pascal_contex/
     1. Open createLMDB.py and modify the variables “color_dir”, “label_dir” and “output_dir” to match your folder structure for your training set.
@@ -67,7 +103,14 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
         ```
 
     1. Modify the “data”-layer during the TRAIN phase:
-        1. Set the mean_values according to the values stored in $CAFFE_ROOT/models/fcn_32_pascal_contex/lmdb/train/color-mean.csv
+        1. Set the mean_values according to the values stored in ./lmdb/train/color-mean.csv
+        
+            ```
+            mean_value: 103.0077
+            mean_value: 112.1925
+            mean_value: 117.3562
+            ```
+        
         1. Set the source for the data_param:
         
             ```
@@ -82,7 +125,16 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
             ```
             
     1. Modify the “data”-layer during the TEST phase:
-        1. Set the mean_values according to the values stored in $CAFFE_ROOT/models/fcn_32_pascal_contex/lmdb/test/color-mean.csv
+        1. Set the mean_values according to the values stored in ./lmdb/train/color-mean.csv . E.g.:
+        
+            ```
+            mean_value: 103.0077
+            mean_value: 112.1925
+            mean_value: 117.3562
+            ```
+        
+            * **Note:** These values should be the same as those set for the TRAIN phase.
+        
         1. Set the source for the data_param:
         
             ```
@@ -96,12 +148,24 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
             source: "./lmdb/test/label-lmdb/"
             ```
 
-1. Use caffemodel as a stating point
 1. Modify solver.prototxt
     1. Set display = 1
     1. Set test_iter equal to the number of images in your test set
-1. Run solve.py
-    Note: If out of memory, consider using the cpu instead. Change caffe.set_mode_gpu() to caffe.set_mode_cpu()
+    
+1. Modify solve.py
+    1. Use caffemodel as a stating point
+    1. ** *Needs clarification* **
+1. Fine-tune the network
+    1. In the terminal, write
+    
+        ```
+        ipython solve.py 2>&1 | tee TrainingLog.log
+        ```
+        
+        * **Note:** The first part calls the python script to train the network. The last bit saves the output from the Terminal in the file TrainingLog.log, which we can use to evaluate the training after it is done.
+        
+1. Evaluate the training
+    1. ** To be continued... **
     
 
 ## Problem solving
@@ -119,6 +183,7 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
     
     * The solution is to set make the solver use the CPU instead of the GPU.
         1. In a terminal window, write
+        
             ```
             gedit solve.py
             ```
@@ -126,6 +191,7 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
         1. Go to the line with “caffe.set_mode_gpu()” and replace it with “caffe.set_mode_cpu()”
         1. Save and close solve.py
         1. Run solve.py again from the terminal
+        
             ```
             ipython solve.py
             ```
