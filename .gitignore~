@@ -39,5 +39,5 @@ Thumbs.db
 
 
 Data/trainval/*.mat
-Data/LabelImages
+Data/LabelImages/*.png
 
