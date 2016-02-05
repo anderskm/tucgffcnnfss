@@ -3,7 +3,7 @@ This guide walks you through the steps required to evaluate PASCAL VOC 2010 imag
 
 ## Guide
 1. Download the Caffe network definitions from github
-    1. Go to [https://gist.github.com/shelhamer/80667189b218ad570e82#file-readme-md](https://gist.github.com/shelhamer/80667189b218ad570e82#file-readme-md)
+    1. Go to [https://gist.github.com/shelhamer/80667189b218ad570e82](https://gist.github.com/shelhamer/80667189b218ad570e82)
     1. Select “Download ZIP”
     1. In the File Explorer in Ubutuntu, go to ~/code/caffe/models and create a folder called fcn_32_pascal_contex
     1. Extract the content of the ZIP to this folder
