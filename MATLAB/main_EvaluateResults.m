@@ -15,19 +15,43 @@ clear,close all; clc;
     % 1: The classifier has been trained on XX classes, that is mapped to
     % YY classe
 
+% Select one of the below specified settings to be evaluated.
+selectSetting = 4;
+
+evalSetting(1).dirImagesOrg =  '/home/repete/DataFolder/VOC2010/JPEGImages';
+evalSetting(1).dirImagesTest =  '../Data/Context33';
+evalSetting(1).selectMapping = 1;
+
+evalSetting(2).dirImagesOrg =  '/home/repete/DataFolder/VOC2010/JPEGImages';
+evalSetting(2).dirImagesTest =  '../Data/Context59';
+evalSetting(2).selectMapping = 2;
+
+evalSetting(3).dirImagesOrg =  '/home/repete/DataFolder/VOC2010/JPEGImages';
+evalSetting(3).dirImagesTest =  '../Data/Agro1';
+evalSetting(3).selectMapping = 3;
+
+evalSetting(4).dirImagesOrg =  '/home/repete/DataFolder/VOC2010/JPEGImages';
+evalSetting(4).dirImagesTest =  '../Data/Agro2';
+evalSetting(4).selectMapping = 4;
+
+
+
 % Directory of original color images;
-dirImagesOrg = '/home/repete/DataFolder/VOC2010/JPEGImages';
+dirImagesOrg = evalSetting(selectSetting).dirImagesOrg;
 
 % Directory of annotated test images.
-dirImagesTest = '../Data/Context59';
+dirImagesTest = evalSetting(selectSetting).dirImagesTest;
 dirsImagesTest = dir(fullfile(dirImagesTest,'*.png'));
+
+%
+selectMapping = evalSetting(selectSetting).selectMapping;
 
 % Directory of cvs mapping file.
 dirCSVfile = '../Data/PascalContextClasses.csv';
 [ labelMap ] = loadLabelMappingsFromCSVfile( dirCSVfile );
-selectMapping = 2;
 labels = labelMap(selectMapping).NewLabelIdsUnique;
 labelNames = labelMap(selectMapping).NewLabelNamesUnique;
+
 
 % Show the most frequent classes that covers XX% of the image
 % imageLabelCoverage = 0.95;
@@ -35,7 +59,7 @@ labelNames = labelMap(selectMapping).NewLabelNamesUnique;
 
 dColors = distinguishable_colors(length(labels));
 
-for iImage = 1%:length(dirsImagesTest)
+for iImage = 1:length(dirsImagesTest)
     imgAnnotation = imread(fullfile(dirImagesTest,dirsImagesTest(iImage).name));
     
     % Show only annotated classes

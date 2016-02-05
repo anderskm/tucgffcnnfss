@@ -15,32 +15,40 @@ clear,close all; clc;
     % 1: The classifier has been trained on XX classes, that is mapped to
     % YY classe
 
+evalSetting.
 % Directory of original color images;
 dirImagesOrg = '/home/repete/DataFolder/VOC2010/JPEGImages';
 
 % Directory of annotated test images.
-dirImagesTest = '../Data/Context33';
+dirImagesTest = '../Data/Context59';
 dirsImagesTest = dir(fullfile(dirImagesTest,'*.png'));
 
 % Directory of cvs mapping file.
 dirCSVfile = '../Data/PascalContextClasses.csv';
 [ labelMap ] = loadLabelMappingsFromCSVfile( dirCSVfile );
-selectMapping = 1;
+selectMapping = 3;
 labels = labelMap(selectMapping).NewLabelIdsUnique;
 labelNames = labelMap(selectMapping).NewLabelNamesUnique;
 
-% Select most fremost dominating 
+% Show the most frequent classes that covers XX% of the image
+% imageLabelCoverage = 0.95;
+
 
 dColors = distinguishable_colors(length(labels));
 
-for iImage = 1:length(dirsImagesTest)
+for iImage = 1%:length(dirsImagesTest)
     imgAnnotation = imread(fullfile(dirImagesTest,dirsImagesTest(iImage).name));
     
-        
+    % Show only annotated classes
     vecUsedLabels = double(unique(imgAnnotation(:)));
-    vecLabelFreq= histc(imgAnnotation(:),values);
+    vecLabelFreq= histc(imgAnnotation(:),vecUsedLabels);
     freqLabelMat = [vecLabelFreq/sum(vecLabelFreq) vecUsedLabels];
-    sortFreqLabelMat = flipud(sortrows(freqLabel)); 
+    sortFreqLabelMat = flipud(sortrows(freqLabelMat)); 
+    
+    
+    
+    
+    
     
     imgAnnotationVis = im2double(imgAnnotation);
     figure(1)
@@ -51,17 +59,16 @@ for iImage = 1:length(dirsImagesTest)
     
     subplot(1,3,2); title('Annotated image')
     imshow(imgAnnotationVis*255/length(labels)); 
+%     image(imgAnnotation); 
     colormap(dColors)
     lcolorbar(labelNames');
     
     subplot(1,3,3); title('Predicted')
     imshow(imgAnnotationVis*255/length(labels)); 
+%     image(imgAnnotation)
     colormap(dColors)
     lcolorbar(labelNames');
 
     
-%     drawnow(); 
-%     clf
+
 end
-% Directory of predicted test images.
-%dirImagesPredicted = ;
