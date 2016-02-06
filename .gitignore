@@ -37,6 +37,11 @@
 ehthumbs.db
 Thumbs.db
 
+# Scripts autosave #
+####################
+* .m~
+*.py~
+
 
 #Data/trainval/
 #Data/LabelImages/
