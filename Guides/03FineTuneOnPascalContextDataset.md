@@ -166,12 +166,37 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
 
         ```
         
-    1. Set test_iter equal to the number of images in your test set
+    1. When you are done, save and close the editor.
     
 1. Modify solve.py
-    1. Use fcn-32s-pascalcontext.caffemodel as a stating point
-    1. ** *Needs clarification* **
-1. Fine-tune the network
+    1. In the terminal, type
+    
+        ```
+        gedit solve.py
+        ```
+    
+    1. As we are gonna fine-tune on FCN-32 rather than using VGG16 as a starting point, we need to change the base_weights. Find and modify the variable base_weights
+    
+        ```
+        base_weights = 'fcn-32s-pascalcontext.caffemodel'
+        ```
+        
+    1. Modify the final line, to set the number of steps the solver needs to take equal to 10 epochs:
+    
+    ```
+    solver.step(70720)
+    ```
+        
+    1. Comment out the following two lines:
+    
+        ```
+        interp_layers = [k for k in solver.net.params.keys() if 'up' in k]
+interp_surgery(solver.net, interp_layers)
+        ```
+        
+        * **Note:** These two lines intializes the weigths in the devonolutional layer, however, as we are fine-tuning, we are not interested in reinitalizing them. If you wish so, you can leave these two lines uncommented.
+        
+1. Train/fine-tune the network
     1. In the terminal, write
     
         ```
