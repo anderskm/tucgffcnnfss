@@ -149,11 +149,25 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
             ```
 
 1. Modify solver.prototxt
-    1. Set display = 1
+    1. In the terminal, write
+    
+        ```
+        gedit solver.prototxt
+        ```
+        
+    1. In solver.prototxt, find and modify the following varialbes:
+    
+        ```
+        display = 1 # Display the progress after each iteration
+        test_interval = 7072 # Test the network after 7072 iterations (= size of training set)
+        test_itr = 3031 # Run test for 3031 iterations (= size of test set)
+
+        ```
+        
     1. Set test_iter equal to the number of images in your test set
     
 1. Modify solve.py
-    1. Use caffemodel as a stating point
+    1. Use fcn-32s-pascalcontext.caffemodel as a stating point
     1. ** *Needs clarification* **
 1. Fine-tune the network
     1. In the terminal, write
@@ -165,6 +179,8 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
         * **Note:** The first part calls the python script to train the network. The last bit saves the output from the Terminal in the file TrainingLog.log, which we can use to evaluate the training after it is done.
         
 1. Evaluate the training
+    1. readTerminalLog.m
+    1. evalAll.py
     1. ** To be continued... **
     
 
