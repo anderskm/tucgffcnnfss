@@ -183,9 +183,9 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
         
     1. Modify the final line, to set the number of steps the solver needs to take equal to 10 epochs:
     
-    ```
-    solver.step(70720)
-    ```
+        ```
+        solver.step(70720)
+        ```
         
     1. Comment out the following two lines:
     
