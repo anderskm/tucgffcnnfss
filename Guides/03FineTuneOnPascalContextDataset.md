@@ -158,9 +158,11 @@ This guide provides step-by-step instructions for fine-tuning the Caffe model pr
     1. In solver.prototxt, find and modify the following varialbes:
     
         ```
-        display = 1 # Display the progress after each iteration
-        test_interval = 7072 # Test the network after 7072 iterations (= size of training set)
-        test_itr = 3031 # Run test for 3031 iterations (= size of test set)
+        display: 1 # Display the progress after each iteration
+        test_interval: 7072 # Test the network after 7072 iterations (= size of training set)
+        test_itr: 3031 # Run test for 3031 iterations (= size of test set)
+        max_iter: 70720 # Train for 10 epochs (1 epoch = 1 time through the training set = 7072 iterations)
+        snapshot: 70720 # Make a snapshop after 10 epochs
 
         ```
         
